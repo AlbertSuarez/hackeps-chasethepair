@@ -43,9 +43,17 @@ Result: [221, 225]
 
 ## Description
 
-TODO
+Get the two given sets and merge into one single list. Then using Python Lambdas, get the closest number of `to_chase` number given the merged list:
+
+```python
+closest_number = min(list_merged, key=lambda x: abs(x - to_chase))
+```
+
+Remove that `closest_number` from the list. Repeat the process and return these two numbers.
 
 ## Information
+
+> I could not fill this information because the `example` script doesn't work on Unix.
 
 - Group name: ---
 - Cost: ---
