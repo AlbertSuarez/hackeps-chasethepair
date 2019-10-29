@@ -4,8 +4,7 @@ def solve(set_a, set_b, to_chase):
     # Get closest number and remove it
     closest_number = min(list_merged, key=lambda x: abs(x - to_chase))
     del list_merged[list_merged.index(closest_number)]
-    # Get second closest number and remove it
+    # Get second closest number
     second_closest_number = min(list_merged, key=lambda x: abs(x - to_chase))
-    del list_merged[list_merged.index(second_closest_number)]
     # Return
     return second_closest_number, closest_number
