@@ -53,8 +53,8 @@ return min(set_[a|b], key=lambda x: abs(x - to_chase))
 
 - Group name: Albert Suarez
 - Cost: O(n)
-- Time expend: 0.0048539639s
-- Sets size: 10000
+- Time expend: 0.0467770100s
+- Sets size: 100,000
 
 ## Requirements
 
