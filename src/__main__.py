@@ -30,8 +30,10 @@ def _main():
     start_time = time.time()
     result = chase_the_pair.solve(set_a, set_b, to_chase)
     end_time = time.time()
-    assert result == expected_result
-    print(f'Yay! The result is {result} in {end_time - start_time:0.10f}s')
+    if result == expected_result:
+        print(f'Yay! The result is {result} in {end_time - start_time:0.10f}s')
+    else:
+        print(f'Oh! The result should be {expected_result} and yours is {result}.')
 
 
 if __name__ == '__main__':
